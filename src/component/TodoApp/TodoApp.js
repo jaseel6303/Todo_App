@@ -58,7 +58,7 @@ export default class TodoApp extends Component {
 
     const {input, items } = this.state;
 
-    console.log(items);
+//    console.log(items);
 
     return (
       <div className='todo-container'>
@@ -66,13 +66,20 @@ export default class TodoApp extends Component {
 
             <form className='input-section' onSubmit={this.storeItems}>
             <h1>Todo App</h1>
-                <input type='text' value={input} onChange={this.handleChange} placeholder='Enter Items'/>
+                <input   type='text' value={input} onChange={this.handleChange} placeholder='Enter Items ...'/>
                 
             </form>
 
             <ul>
                 {items.map((data, index) => (
-                    <li key={index}> {data} <i className="fas fa-trash-alt" onClick={() => this.deleteItem(index)}></i> </li>
+
+                    <li key={index}>
+                        <div className="item-container">
+                            <span className="item-text">{data}  </span>
+                            <i className="fas fa-trash-alt" onClick={() => this.deleteItem(index)}></i>
+                            
+                        </div>
+                    </li>
                 ))}
                 
             </ul>

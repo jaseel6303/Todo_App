@@ -1,17 +1,15 @@
 body {
     margin: 0;
-    background-color: #056679;
+    background-color: #ad3a2d;
     font-family: sans-serif;
 
 }
 
 .todo-container {
-    width: 350px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+    width: 378px;
     text-align: center;
+    margin: auto;
+    margin-top: 30px;
 }
 
 h1 {
@@ -22,8 +20,10 @@ h1 {
 
 }
 
+
+
 .input-section {
-    background-color: #055565;
+    background-color: #923126;
     padding: 18px;
     border-radius: 10px;
     box-shadow: 0px 7px 6px #0000003b;
@@ -36,37 +36,54 @@ h1 {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
-    background-color: #056679;   
+    background-color: #ad3a2d;   
     outline: none;
-    color: #08869e;
+    color: #989999;
 }
 
 input::placeholder{
-    color: #08869e;
+    color: #171312;
 }
 
 ul {
 
     text-align: left;
     padding: 0;
+    list-style-type: none;
 
 }
 
-ul li {
-    list-style: none;
-    background-color: #055565;
+
+ /*Icon */ 
+ul li i {
+    
+    color: #171312;
+}
+
+.item-container {
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #923126;
     padding: 15px;
     border-radius: 5px;
     margin-bottom: 10px;
-    color: #08869e;
+    
     box-shadow: 0 4px 6px #00000066;
+}
+
+.item-text {
+    width: 320px;
+    overflow-y: auto;
     display: flex;
+    color: #171312;
 
-
+    
+    
+    
 }
 
-ul li i {
-    text-align: right;
-    flex: 1;
-    cursor: pointer;
-}
+
+

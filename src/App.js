@@ -12,3 +12,31 @@ function App() {
 }
 
 export default App;
+
+
+// refactor 
+
+
+/*
+refactor 1
+=============
+class component to function component
+
+const App = () => {
+  return <TodoApp /> ;
+};
+
+simplify / optimize code
+===========================
+
+const App = () => <TodoApp />;
+
+
+simplify / optimize code
+============================
+export default () => <TodoApp />;
+
+
+
+
+*/
